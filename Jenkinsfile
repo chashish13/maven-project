@@ -16,5 +16,14 @@ pipeline {
                 }
             }
 }
+            {
+        stage ('Compile Test') {
+
+            steps {
+                withMaven(maven : 'MVN_HOME') {
+                    sh 'mvn clean test'
+                }
+            }
+}
 }
 }
