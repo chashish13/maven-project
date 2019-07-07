@@ -17,11 +17,11 @@ pipeline {
             }
 }
             {
-        stage ('Compile Test') {
+        stage ('Test Stage') {
 
             steps {
                 withMaven(maven : 'MVN_HOME') {
-                    sh 'mvn clean test'
+                    sh 'mvn test'
                 }
             }
 }
