@@ -7,7 +7,7 @@ pipeline {
           git 'https://github.com/chashish13/maven-project.git'
         }
   }
-    {
+  {
         stage ('Install Stage') {
 
             steps {
