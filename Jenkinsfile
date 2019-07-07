@@ -23,6 +23,7 @@ pipeline {
                 withMaven(maven : 'MVN_HOME') {
                     sh 'mvn test'
                 }
+                }
             }
 }
 }
