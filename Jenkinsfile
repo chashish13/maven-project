@@ -27,4 +27,3 @@ sh 'scp -o StrictHostKeyChecking=no webapp/target/*.war ec2-user@172.31.46.121:/
     }
 }
 }
-}
