@@ -18,11 +18,11 @@ pipeline {
         }            
 }
             {
-        stage ('Test Stage') {
+        stage ('Install Stage') {
 
             steps {
                 withMaven(maven : 'MVN_HOME') {
-                    sh 'mvn test'
+                    sh 'mvn install'
                 }
             }
 }
