@@ -8,16 +8,6 @@ pipeline {
         }
   }
     {
-        stage ('Compile Stage') {
-
-            steps {
-                withMaven(maven : 'MVN_HOME') {
-                    sh 'mvn clean compile'
-                }
-            }
-        }            
-}
-        {
         stage ('Install Stage') {
 
             steps {
