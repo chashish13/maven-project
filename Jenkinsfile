@@ -15,6 +15,7 @@ pipeline {
                     sh 'mvn clean compile'
                 }
             }
+        }            
 }
             {
         stage ('Test Stage') {
@@ -24,7 +25,6 @@ pipeline {
                     sh 'mvn test'
                 }
             }
-}
 }
 }
 }
